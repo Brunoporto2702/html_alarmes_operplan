@@ -1,0 +1,35 @@
+
+
+#text-content {
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+#button-area {
+    position: absolute;
+    background-color: dodgerblue;
+    display: inline;
+    font-family: monospace;
+    width: 100%;
+}
+
+#button-area ul {
+    padding: 0px;
+    margin: 0px;
+    background-color: cornflowerblue;
+    list-style: none;
+}
+
+#button-area ul li {
+    display: inline-block;
+}
+
+#action-button {
+    margin: 4px 2px;
+    padding: 10px;
+    border-radius: 0;
+    border-bottom-color: aliceblue;
+}
+#datetime {
+    border: 1px;
+}

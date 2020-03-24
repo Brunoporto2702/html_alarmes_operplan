@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Visor de Alarmes</title>
+        <!-- Main stylesheet .css file -->
+        <link rel="stylesheet" href="alarm_style.css">
+        <!-- FontAwesome link to acess custom icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <!-- Page's Header  -->
+        <header>
+            <!-- Navigation Menu -->
+            <nav>
+                <div id="button-area">
+                    <ul>
+                        <li><button type="button" id="action-button">Visor</button></li>
+                        <li><button type="button" id="action-button">Ação</button></li>
+                        <li><button type="button" id="action-button">Reconhecer</button></li>
+                        <li><button type="button" id="action-button">Eliminar</button></li>
+                        <li><button type="button" id="action-button">Rec+Elim</button></li>
+                        <li><button type="button" id="action-button">Tela</button></li>
+                        <li><button type="button" id="action-button">Nota</button></li>
+                        <li><button type="button" id="action-button"><i class="fas fa-volume-up"></i></button></li>
+                        <li>
+                            <div id="text-content">Lista geral do Sistema Elétrico</div>
+                        </li>
+                        <li>
+                            <div id="text-content">
+                                <span id="datetime"></span>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <div>
+                        
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <!-- Section with important content -->
+        <section>
+
+            
+        </section>
+        
+        <!-- Page's Footer -->
+        <footer>
+            <script>
+                var dt = new Date();
+                document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+            </script>
+        </footer>
+        
+    </body>
+</html> 

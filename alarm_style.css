@@ -51,6 +51,15 @@ div > nav div ul li button {
 
 section {
     height: 40vh;
+    width: 100%;
+    display: inline-block;
+}
+
+section > div p {
+}
+
+section p :active {
+ color: yellow;
 }
 
 .terminal_1 {
@@ -59,4 +68,8 @@ section {
 
 .terminal_2 {
     background-color: darkblue;
+}
+
+.terminal_2 p{
+    color: aliceblue;
 }

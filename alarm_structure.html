@@ -25,7 +25,7 @@
                         <li><button type="button">Nota</button></li>
                         <li><button type="button"><i class="fas fa-volume-up"></i></button></li>
                         <li><p>Lista geral do Sistema Elétrico</p></li>
-                        <li><span id="datetime"></span></li>
+                        <li><span id="clock"></span></li>
                     </ul>                        
                 </div>
                 <!-- Contains the input-field and the stats exibitors -->
@@ -37,7 +37,18 @@
         
         <!-- Section with 3 divisions for code output (first terminal) -->
         <section class="terminal_1">
-            <div></div>
+            <div>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
             <div></div>
             <div></div>
         </section>
@@ -77,7 +88,18 @@
         </div>
         <!-- Section with 3 divisions for code output (first terminal) -->
         <section class="terminal_2">
-            <div></div>
+            <div>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
             <div></div>
             <div></div>
         </section>
@@ -85,9 +107,27 @@
         <footer>
             
         </footer>
+        <!-- Small embeeded JS script for demonstration -->
         <script>
             var dt = new Date();
-            document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+            var hour = dt.getHours();
+            var minute = dt.getMinutes();
+            var seconds = dt.getSeconds();
+            var day = dt.getDay();
+            var month = dt.getMonth();
+            var year = dt.getYear();
+            const months_name = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            var elements = document.querySelectorAll("section div p");
+            for (element in elements) {
+            // the keys are class names, use them to pick out what element
+            // we are going to modify & then replace the innerHTML content
+            // of that element
+            element.innerHTML = day + "/" + month + " " + hour + ":" + minute + ":" + seconds;
+            };
+            console.log(elements.length)
+            
+            document.getElementById("clock").innerHTML = hour + ":" + minute + ":" + seconds;
+            document.getElementsByName("datetime").innerHTML = day + "/" + month + " " + hour + ":" + minute + ":" + seconds;
         </script>
     </body>
 </html> 

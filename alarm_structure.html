@@ -12,9 +12,9 @@
         <!-- Page's Header  -->
         <header>
             <!-- Main Navigation Menu -->
-            <nav>
+            <nav class="nav-display">
                 <!-- Contains the buttons, main text and clock -->
-                <div>
+                <div class="nav-field">
                     <ul>
                         <li><button type="button">Visor</button></li>
                         <li><button type="button">Ação</button></li>
@@ -24,49 +24,66 @@
                         <li><button type="button">Tela</button></li>
                         <li><button type="button">Nota</button></li>
                         <li><button type="button"><i class="fas fa-volume-up"></i></button></li>
-                        <li><p>Lista geral do Sistema Elétrico</p></li>
-                        <li><span>12:59:25</span></li>
-                    </ul>                        
+                        <li class="main-text"><p>Lista geral do Sistema Elétrico</p></li>
+                        <li class="clock"><span>12:59:25</span></li>
+                    </ul>  
                 </div>
                 <!-- Contains the input-field and the stats exibitors -->
-                <div>
-                    
+                <div class="nav-field">
+                    <ul>
+                        <li class="filter-area">
+                            <label for="filtro">Filtro:</label>
+                            <input type="text" id="filtro" name="fname">
+                        </li>
+                        <li>
+                            <ul class="status-area">
+                                <li class="staus-label">Som Global:<span class="status">Hab</span></li>
+                                <li class="staus-label">Alarmes:<span class="status">53</span></li>
+                                <li class="staus-label">Urgência:<span class="status text-red">0</span></li>
+                                <li class="staus-label">Advertência:<span class="status text-green">0</span></li>
+                                <li class="staus-label">Não Rec:<span class="status">53</span></li>
+                            </ul>
+                        </li>
+                    </ul> 
                 </div>
             </nav>
         </header>
         
         <!-- Section with 3 divisions for code output (first terminal) -->
-        <section class="terminal_1">
+        <section class="terminal terminal_1">
             <div>
+                <p class="yellow-text">05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
+                <p class="red-text">05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
-                <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
-                <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
+                <p class="green-text">05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
             </div>
             <div>
+                <p class="yellow-text">05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
+                <p class="green-text">05/15/2020 14:35:59 Novo dia e 15 Mai</p>
+                <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
+                <p class="red-text">05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
-                <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
-                <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
-                <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
-                <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
+                <p class="yellow-text">05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
             </div>
             <div>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
+                <p class="red-text">05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
-                <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
-                <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
+                <p class="green-text">05/15/2020 14:35:59 Novo dia e 15 Mai</p>
+                <p class="yellow-text">05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
             </div>
@@ -76,7 +93,7 @@
         <div>
             <nav>
                 <!-- Contains the buttons, main text and clock -->
-                <div>
+                <div class="nav-field control-field">
                     <ul>
                         <li><button type="button">GERAL</button></li>
                         <li><button type="button">DISJ</button></li>
@@ -93,12 +110,12 @@
                         <li><button type="button">TIE2J0</button></li>
                         <li><button type="button">SAUX</button></li>
                         <li><button type="button">SJ0SP</button></li>
-                        <li><button type="button">CONFIG</button></li>
-                        <li><button type="button">AOPER</button></li> <!-- green text -->
-                        <li><button type="button">CNTRL</button></li> <!-- red text -->
+                        <li><button type="button" class="text-green">CONFIG</button></li>
+                        <li><button type="button" class="text-red">AOPER</button></li> <!-- green text -->
+                        <li><button type="button" class="text-yellow">CNTRL</button></li> <!-- red text -->
                     </ul>                        
                 </div>
-                <div>
+                <div class="nav-field control-field">
                     <ul>
                         <li><button type="button">COMD</button></li>
                     </ul>
@@ -106,39 +123,42 @@
             </nav>
         </div>
         <!-- Section with 3 divisions for code output (first terminal) -->
-        <section class="terminal_2">
+        <section class="terminal terminal_2">
             <div>
+                <p class="red-text">05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
+                <p class="green-text">05/15/2020 14:35:59 Novo dia e 15 Mai</p>
+                <p class="green-text">05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
-                <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
-                <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
-                <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
+                <p class="yellow-text">05/15/2020 14:35:59 Novo dia e 15 Mai</p>
             </div>
             <div>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
+                <p class="red-text">05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
-                <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
+                <p class="green-text">05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
             </div>
             <div>
+                <p class="green-text">05/15/2020 14:35:59 Novo dia e 15 Mai</p>
+                <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
+                <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
+                <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
+                <p class="yellow-text">05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
                 <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
-                <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
-                <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
-                <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
-                <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
-                <p>05/15/2020 14:35:59 Novo dia e 15 Mai</p>
+                <p class="red-text">05/15/2020 14:35:59 Novo dia e 15 Mai</p>
             </div>
         </section>
     </body>

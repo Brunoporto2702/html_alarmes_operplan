@@ -1,3 +1,9 @@
+:root {
+    --green-text: limegreen;
+    --yellow-text: yellow;
+    --red-text: red;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -6,39 +12,57 @@ html, body {
     height: 100vh;
 }
 
-nav > div {
+header {
+}
+.nav-field {
     position: relative;
-    background-color: dodgerblue;
     display: inline;
+    text-align: left;
     width: 100%;
     height: 10vh;
+    background-color: dodgerblue;
+    color: aliceblue;
 }
 
-nav > div ul {
+.nav-field ul {
+    list-style: none;
     padding: 0px;
     margin: 0px;
-    background-color: cornflowerblue;
-    list-style: none;
     width: 100%;
+    background-color: cornflowerblue;
 }
 
-nav > div ul li {
+.nav-field ul li {
     display: inline-block;
 }
 
-nav > div ul li button {
+.nav-field ul li button.text-green {
+    color: var(--green-text);
+}
+
+.nav-field ul li button.text-yellow {
+    color: var(--yellow-text);
+}
+
+.nav-field ul li button.text-red {
+    color: var(--red-text);
+}
+
+.nav-field ul li button {
     margin: 2px 0px;
     padding: 10px;
     border-radius: 0;
     border-bottom-color: aliceblue;
     background-color: cornflowerblue;
+    color: aliceblue;
 }
-nav > div ul li p {
+
+.nav-field ul li p {
     background-color: cornflowerblue;
     text-align: center;
     width: 100%;
 }
-nav > div ul li spam {
+.nav-field ul li spam {
     position: absolute;
     border: 1px;
     background-color: red;
@@ -46,32 +70,100 @@ nav > div ul li spam {
     float: right;
 }
 
-div > nav div ul li button {
+.nav-field div ul li button {
     background-color: #ccc;
 }
 
-section {
+.terminal {
     height: 40vh;
     width: 100%;
     display: inline-block;
 }
 
-section > div {
+.terminal div {
     padding: 0px 10px;
     margin:  0px 10px;
     display: inline-block;
 }
 
-section > div p {
- color: aliceblue;
+.terminal div p {
+    color: aliceblue;
+    margin: 8px 0px;
+}
+
+.terminal div p.green-text {
+    color: var(--green-text);
+}
+
+.terminal div p.yellow-text {
+    color: var(--yellow-text);
+}
+
+.terminal div p.red-text {
+    color: var(--red-text);
 }
 
 .terminal_1 {
+    height: 37vh;
     background-color: black;
 }
 
 .terminal_2 {
+    height: 38vh;
     background-color: darkblue;
 }
 
-.
+.status-area {
+    width: 65%;
+    align-content: center;
+}
+
+.status-content {
+    align-content: center;
+}
+
+.status {
+    padding: 1px 4px;
+    border-radius: 3px;
+    border: 1px;
+    background-color: steelblue;
+}
+
+.staus-label {
+    margin: 0px 5px;
+}
+
+.filter-area {
+    width: 35%;
+}
+
+.main-text {
+    padding: 0px 10px;
+    width: 42%;
+
+}
+
+.clock {
+    margin-left: 10px;
+    width: 10%;
+}
+
+.text-green {
+    color: var(--green-text);
+}
+
+.text-yellow {
+    color: var(--yellow-text);
+}
+
+.text-red {
+    color: var(--red-text);
+}
+
+.nav-display {
+    display: inline;
+}
+
+.control-field ul li button {
+    background-color: slategray;
+}

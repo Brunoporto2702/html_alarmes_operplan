@@ -11,8 +11,9 @@
     <body>
         <!-- Page's Header  -->
         <header>
-            <!-- Navigation Menu -->
+            <!-- Main Navigation Menu -->
             <nav>
+                <!-- Contains the buttons, main text and clock -->
                 <div>
                     <ul>
                         <li><button type="button">Visor</button></li>
@@ -23,35 +24,70 @@
                         <li><button type="button">Tela</button></li>
                         <li><button type="button">Nota</button></li>
                         <li><button type="button"><i class="fas fa-volume-up"></i></button></li>
-                        <li>
-                            <div>Lista geral do Sistema Elétrico</div>
-                        </li>
-                        <li>
-                                <span id="datetime"></span>
-                        </li>
-                    </ul>
+                        <li><p>Lista geral do Sistema Elétrico</p></li>
+                        <li><span id="datetime"></span></li>
+                    </ul>                        
+                </div>
+                <!-- Contains the input-field and the stats exibitors -->
+                <div>
                     
-                    <div>
-                        
-                    </div>
                 </div>
             </nav>
         </header>
         
-        <!-- Section with important content -->
-        <section>
+        <!-- Section with 3 divisions for code output (first terminal) -->
+        <section class="terminal_1">
             <div></div>
             <div></div>
             <div></div>
         </section>
         
+        <!-- Secondary Navigation Menu -->
+        <div>
+            <nav>
+                <!-- Contains the buttons, main text and clock -->
+                <div>
+                    <ul>
+                        <li><button type="button">GERAL</button></li>
+                        <li><button type="button">DISJ</button></li>
+                        <li><button type="button">ADVER</button></li>
+                        <li><button type="button">ARGD</button></li>
+                        <li><button type="button">ABRA</button></li>
+                        <li><button type="button">ABJD</button></li>
+                        <li><button type="button">AELN</button></li>
+                        <li><button type="button">AGID</button></li>
+                        <li><button type="button">ABJI</button></li>
+                        <li><button type="button">AT701A</button></li>
+                        <li><button type="button">AT701H</button></li>
+                        <li><button type="button">LTRGEI</button></li>
+                        <li><button type="button">TIE2J0</button></li>
+                        <li><button type="button">SAUX</button></li>
+                        <li><button type="button">SJ0SP</button></li>
+                        <li><button type="button">CONFIG</button></li>
+                        <li><button type="button">AOPER</button></li> <!-- green text -->
+                        <li><button type="button">CNTRL</button></li> <!-- red text -->
+                    </ul>                        
+                </div>
+                <div>
+                    <ul>
+                        <li><button type="button">COMD</button></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Section with 3 divisions for code output (first terminal) -->
+        <section class="terminal_2">
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
         <!-- Page's Footer -->
         <footer>
-            <script>
-                var dt = new Date();
-                document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
-            </script>
+            
         </footer>
-        
+        <script>
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+        </script>
     </body>
 </html> 

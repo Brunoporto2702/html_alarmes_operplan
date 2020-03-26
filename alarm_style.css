@@ -1,16 +1,16 @@
-
-
-#text-content {
-    background-color: cornflowerblue;
-    text-align: center;
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
 }
 
 nav > div {
-    position: absolute;
+    position: relative;
     background-color: dodgerblue;
     display: inline;
-    font-family: monospace;
     width: 100%;
+    height: 10vh;
 }
 
 nav > div ul {
@@ -18,6 +18,7 @@ nav > div ul {
     margin: 0px;
     background-color: cornflowerblue;
     list-style: none;
+    width: 100%;
 }
 
 nav > div ul li {
@@ -25,11 +26,37 @@ nav > div ul li {
 }
 
 nav > div ul li button {
-    margin: 4px 2px;
+    margin: 2px 0px;
     padding: 10px;
     border-radius: 0;
     border-bottom-color: aliceblue;
+    background-color: cornflowerblue;
+}
+nav > div ul li p {
+    background-color: cornflowerblue;
+    text-align: center;
+    width: 100%;
 }
 nav > div ul li spam {
+    position: absolute;
     border: 1px;
+    background-color: red;
+    right: 0;
+    float: right;
+}
+
+div > nav div ul li button {
+    background-color: #ccc;
+}
+
+section {
+    height: 40vh;
+}
+
+.terminal_1 {
+    background-color: black;
+}
+
+.terminal_2 {
+    background-color: darkblue;
 }

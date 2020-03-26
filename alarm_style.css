@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     box-sizing: border-box;
     font-family: monospace;
+    height: 100vh;
 }
 
 nav > div {
@@ -55,11 +56,14 @@ section {
     display: inline-block;
 }
 
-section > div p {
+section > div {
+    padding: 0px 10px;
+    margin:  0px 10px;
+    display: inline-block;
 }
 
-section p :active {
- color: yellow;
+section > div p {
+ color: aliceblue;
 }
 
 .terminal_1 {
@@ -70,6 +74,4 @@ section p :active {
     background-color: darkblue;
 }
 
-.terminal_2 p{
-    color: aliceblue;
-}
+.
